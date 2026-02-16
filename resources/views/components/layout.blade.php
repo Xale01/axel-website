@@ -6,8 +6,11 @@
     <title>{{ isset($title) ? 'Serveur - ' . $title : 'Serveur' }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
-<body class="bg-[#353535]">
-    <x-navbar/>
-    {{ $slot }}
+<body>
+    <x-navbar />
+
+    <main class="grow">
+        {{ $slot }}
+    </main>
 </body>
 </html>

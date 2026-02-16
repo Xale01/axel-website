@@ -2,10 +2,33 @@
 @import "tailwindcss";
 
 @theme {
-    --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* --- NOS COULEURS COLOC --- */
+    
+    /* FOND : Gris Asphalte (Ni trop noir, ni trop clair) */
+    --color-bg-main: #262626; 
+    --color-bg-card: #404040; 
+
+    /* ACTION : Jaune Surligneur (Pour les boutons, les trucs à cliquer) */
+    --color-brand: #facc15; 
+    --color-brand-hover: #eab308; 
+    
+    /* ALERTE : Rose Fluo (Dettes, Retards, Urgences) */
+    --color-accent-pink: #d946ef; /* Fuchsia 500 */
+    
+    /* INFO : Cyan Électrique (Infos cool, "C'est fait") */
+    --color-accent-cyan: #06b6d4; /* Cyan 500 */
+
+    /* TEXTE : Lisibilité max */
+    --color-text-main: #fafafa;
+    --color-text-muted: #a3a3a3;
+
+    /* POLICE */
+    --font-sans: "Roboto", ui-sans-serif, system-ui, sans-serif;
+    --default-font-family: var(--font-sans);
 }
+
 @layer base {
   html, body {
-    @apply text-white;
+    @apply bg-bg-main text-text-main font-sans antialiased;
   }
 }
