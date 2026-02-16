@@ -1,12 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serveur - Home</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body class="bg-[#353535] text-white text-4xl text-center pt-15">
-    <p>Bienvenue sur la page web du serveur</p>
-</body>
-</html>
+<x-layout>
+    <x-slot:title>
+        Home
+    </x-slot:title>
+    <p class="text-white text-4xl text-center pt-15">Bienvenue sur la page web du serveur</p>
+</x-layout>
